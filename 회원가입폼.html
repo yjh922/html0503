@@ -9,15 +9,39 @@ td{
 }
 /*table 태그의 보더(외관선)를 1픽셀의 회색으로*/
 table{
-	border:5px dotted #CCCCCC;
+	border:5px solid #CCCCCC;
+	background:url(../images/bg.jpg);
+}
+
+/*회원가입 제목을 나만의 클래스로 정의하여 적용해보기*/
+.formtitle{
+	font-size:20px;
+	font-weight:bold;
+	background:#ccffff;
+	color:blue;
+
+}
+/*,쉼표는 and의 의미*/
+input , textarea {
+	background:yellow;
+	border:1px solid orange;
 }
 </style>
-<title>회원가입폼</title>
+<title>회원가입양식</title>
 </head>
 <body>
+	<!--현재 html문서에서 한단계 위로 나감을 표현하기 위해
+	..(부모 디렉토리를 의미)
+	img 사용하면 아뇌는 이유 물리적으로 공간을 차지해버린다
+	즉 회원가입 테이블을 밀어내버린다
+	우리가 원하는 효과는 테이블의 배경으로 지정하길 원함
+		<img src="../images/bg.jpg">
+	-->
+
+	
 	<table width="500px" align="center">
 		<tr>
-			<td colspan="2" align="center">회원가입</td>
+			<td colspan="2" align="center" class="formtitle">회원가입</td>
 		</tr>
 		<tr>
 			<td >ID</td>
